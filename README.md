@@ -1,7 +1,5 @@
 # 🚗 Driving Experience Management Web Application
-##  Author:
-
-**Madina Mammadova L2**  
+##  Author: **Madina Mammadova L2**  
 Computer Science Student  
 Université Française d’Azerbaïdjan (UFAZ)
 
