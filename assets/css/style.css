@@ -1,0 +1,223 @@
+/* ========== GLOBAL ========== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f69caa, #f8cac9);
+    color: #343232;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Subtle page entrance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== HEADINGS ========== */
+h1, h2, h3 {
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px  ;
+    border-radius:20px ;
+    text-align: center;
+    color: #7c3bf6;
+    letter-spacing: 1.5px;
+}
+
+/* ========== FORM ========== */
+form {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 14px;
+    padding: 25px 30px;
+    max-width: 520px;
+    margin: auto;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ========== INPUTS ========== */
+input, select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Focus effect */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #9841d7;
+    box-shadow: 0 0 0 3px rgba(152, 65, 215, 0.25);
+}
+
+/* Validation feedback */
+input:invalid {
+    border-color: #e57373;
+}
+
+input:valid {
+    border-color: #81c784;
+}
+
+/* Multiple select */
+select[multiple] {
+    height: 130px;
+}
+
+/* ========== BUTTONS ========== */
+button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f9f7fa;
+    border-radius:10px;
+    background: linear-gradient(135deg, #6A5ACD, #9370DB);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* ========== TABLE ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+th {
+    background-color: #D8BFD8;
+    font-weight: bold;
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: #f7e9fb;
+}
+
+/* ========== LAYOUT ========== */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.total-box {
+    margin: 25px auto;
+    padding: 18px;
+    width: 320px;
+    background: linear-gradient(135deg, #FFF0F5, #fbe4f0);
+    border-radius: 12px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* ========== CHARTS ========== */
+.statistics-container {
+    width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 12px;
+}
+
+.chart-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.chart-container {
+    background: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    text-align: center;
+}
+
+.chart-container canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* ========== FOOTER ========== */
+footer {
+    margin-top: 35px;
+    text-align: center;
+    color: #040404;
+    background: rgba(182, 128, 248, 0.6);
+    padding: 16px;
+    border-radius: 10px;
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}
